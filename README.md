@@ -1,4 +1,4 @@
-# `@react-native-segmented-control/segmented-control`
+# `@techrivers/segmented-control`
 
 ![Supports iOS and Android and Web][support-badge]![Github Action Badge][gha-badge] ![npm][npm-badge] [![Lean Core Extracted][lean-core-badge]][lean-core-issue]
 
@@ -26,20 +26,20 @@ Install the library using your package manager:
 pnpm:
 
 ```
-pnpm install --save @react-native-segmented-control/segmented-control
+pnpm install --save @techrivers/segmented-control
 ```
 
 
 yarn:
 
 ```
-yarn add @react-native-segmented-control/segmented-control
+yarn add @techrivers/segmented-control
 ```
 
 npm:
 
 ```
-npm install --save @react-native-segmented-control/segmented-control
+npm install --save @techrivers/segmented-control
 ```
 
 ## Link
@@ -58,7 +58,7 @@ For android, no linking is needed, as the module is implemented in js.
    <summary>For React Native version 0.59 or older</summary>
 ### React Native <= 0.59
 
-run `react-native link @react-native-segmented-control/segmented-control`
+run `react-native link @techrivers/segmented-control`
 
 or you can follow the instructions to [manually link this package](https://facebook.github.io/react-native/docs/linking-libraries-ios#manual-linking).
 
@@ -66,7 +66,7 @@ or you can follow the instructions to [manually link this package](https://faceb
 
 New React Native comes with `autolinking` feature, which automatically links Native Modules in your project. In order to get it to work, make sure you unlink `Segmented Control` first:
 
-`react-native unlink @react-native-segmented-control/segmented-control`
+`react-native unlink @techrivers/segmented-control`
 
 </details>
 
@@ -81,7 +81,7 @@ import {SegmentedControlIOS} from 'react-native';
 to:
 
 ```javascript
-import SegmentedControl from '@react-native-segmented-control/segmented-control';
+import SegmentedControl from '@techrivers/segmented-control';
 ```
 
 ## Usage
@@ -98,7 +98,7 @@ Note that the state variable would need to be updated as the user
 selects a value and changes the index, as shown in the example below.
 
 ```javascript
-import SegmentedControl from '@react-native-segmented-control/segmented-control';
+import SegmentedControl from '@techrivers/segmented-control';
 
 return (
   <SegmentedControl
@@ -281,7 +281,7 @@ Please see the [`contributing guide`](/CONTRIBUTING.md).
 The library is released under the MIT licence. For more information see [`LICENSE`](/LICENSE).
 
 [gha-badge]: https://github.com/react-native-segmented-control/segmented-control/workflows/Build/badge.svg
-[npm-badge]: https://img.shields.io/npm/v/@react-native-segmented-control/segmented-control.svg?style=flat-square
+[npm-badge]: https://img.shields.io/npm/v/@techrivers/segmented-control.svg?style=flat-square
 [lean-core-badge]: https://img.shields.io/badge/Lean%20Core-Extracted-brightgreen.svg?style=flat-square
 [lean-core-issue]: https://github.com/facebook/react-native/issues/23313
 [support-badge]: https://img.shields.io/badge/platforms-android%20|%20ios%20|%20web-lightgrey.svg?style=flat-square
