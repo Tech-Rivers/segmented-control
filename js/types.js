@@ -57,6 +57,10 @@ export type SegmentedControlProps = $ReadOnly<{|
    */
   selectedIndex?: ?number,
   /**
+   * The custom color for the separator.
+   */
+  separatorColor?: ?string,
+  /**
    * Callback that is called when the user taps a segment;
    * passes the segment's value as an argument
    */
@@ -96,6 +100,10 @@ export type SegmentedControlProps = $ReadOnly<{|
    * fontStyle for segmented control.
    */
   fontStyle?: FontStyle,
+  /**
+   * is font scaling allowed or not.
+   */
+  allowFontScaling?: boolean,
   /**
    * (iOS 13+ only)
    * activeFontStyle for selected segment.

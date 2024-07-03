@@ -11,11 +11,13 @@ import {StyleSheet, View, useColorScheme} from 'react-native';
 type Props = $ReadOnly<{|
   values: number,
   selectedIndex: ?number,
+  separatorColor: ?string,
 |}>;
 
 export const SegmentsSeparators = ({
   values,
   selectedIndex,
+  separatorColor,
 }: Props): React.Node => {
   const colorScheme = useColorScheme();
   const hide = (val) => {
@@ -31,6 +33,7 @@ export const SegmentsSeparators = ({
             style={[
               styles.separator,
               colorScheme === 'dark' && styles.darkSeparator,
+              separatorColor && {backgroundColor: separatorColor},
               hide(val) && styles.hide,
             ]}
           />

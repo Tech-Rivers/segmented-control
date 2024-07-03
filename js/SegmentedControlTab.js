@@ -24,6 +24,7 @@ type Props = $ReadOnly<{|
   selected: boolean,
   enabled: boolean,
   fontStyle?: FontStyle,
+  allowFontScaling?: boolean,
   activeFontStyle?: FontStyle,
   tabStyle?: ViewStyle,
   appearance?: 'dark' | 'light' | null,
@@ -43,6 +44,7 @@ export const SegmentedControlTab = ({
   selected,
   tintColor,
   fontStyle = {},
+  allowFontScaling = true,
   activeFontStyle = {},
   appearance,
   tabStyle,
@@ -99,7 +101,11 @@ export const SegmentedControlTab = ({
         ) : isBase64(value) ? (
           <Image source={{uri: value}} style={styles.segmentImage} />
         ) : (
-          <Text style={[idleStyle, selected && activeStyle]}>{value}</Text>
+          <Text
+            allowFontScaling={allowFontScaling}
+            style={[idleStyle, selected && activeStyle]}>
+            {value}
+          </Text>
         )}
       </View>
     </TouchableOpacity>
